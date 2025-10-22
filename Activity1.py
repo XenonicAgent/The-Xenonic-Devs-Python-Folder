@@ -1,13 +1,30 @@
-import pygame
-pygame.init()
-screen = pygame.display.set_mode((4000, 2000))
-clock = pygame.time.clock()
-square_pos = pygame.Rect(2950, 1920, 50, 50)
-while True:
-    if pygame.event.get(pygame.QUIT):break
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_UP]:
-    square_pos.y -= 20
-    screen.fill("black")
-    pygame
+# Empty Tuple
+my_tuple = ()
+print(my_tuple)
 
+# Tuple having integers
+my_tuple = (1, 2, 3)
+print(my_tuple)
+
+# Tuple having mixed datatypes
+my_tuple = (1, "Hello", 3.4)
+print(my_tuple)
+
+# Nested tuple
+my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+print(my_tuple)
+
+# Accessing tuple elements using indexing
+my_tuple = 'p', 'e', 'r', 'm', 'i', 't'
+print(my_tuple[0])
+print(my_tuple[5])
+
+# Nested tuple
+n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+
+# Slicing
+print("Sliced :", my_tuple[1:4])
+
+# Iterating through tuple structures
+for letter in (my_tuple):
+    print("Hello", letter)
